@@ -1,45 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <style>
+        body{
+            font-family: 'Inter' , sans-serif;
+            background-color: #141414;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+        }
+        .profile{
+            background-color: #1F1F1F;
+            width: 410px;
+            height: auto;
+            border-radius: 10px;
+            
+        }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./assets/images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        .details{
+            margin: 0;
+            padding: 0;
+        }
+        .links{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+            margin: 0 43px 42px;
+            
+
+        }
+        button{
+            background-color: #333333;
+            color: #FBFBFB;
+            border: none;
+            font-size: 15px;
+            font-weight: bold;
+            height: 49px;
+            width: 325px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+        }
+        h3{
+            color: #FBFBFB;
+            font-size: 25px;
+            font-weight: bolder;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        img{
+            width: 98px;
+            height: 98px;
+            border-radius: 50%;
+            margin: 38px 156px 29px;
+        }
+        h5{
+            color: #C8E66A;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        p{
+            color: #FBFBFB;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 27px;
+        }
+
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="./assets/images/avatar-jessica.jpeg" alt="" class="image">
-    <div class="profile">
-      <h2>Jessica Randall</h2>
-      <h3>London, United Kingdom</h3>
-      <p>"Front-end developer and avid reader."</p>
+    <div class="container">
+        <div class="profile">
+            <img src="./1714737913609.jpg" alt="profile image">
+            <div class="details">
+                <h3>Jessica Randell</h3>
+                <h5>London, United Kingdom</h5>
+                <p>“Front-end developer and avid reader”</p>
+            </div>
+            <div class="links">
+                <button>GITHUB</button>
+                <button>FRONTEND MENTOR</button>
+                <button>LINKEDIN</button>
+                <button>TWITTER</button>
+                <button>INSTAGRAM</button>
+            </div>
+        </div>
     </div>
-
-    <div class="links">
-      <button class="github">GitHub</button>
-      <button  class="frontend-mentor">frontend-mentor</button>
-      <button  class="linkedin">LinkedIn</button>
-      <button  class="twitter">Twitter</button>
-      <button  class="instagram">Instagram</button>
-    </div>
-    
-
-  
-
-  </div>
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.instagram.com/poorna._14/">Poornachandran K.</a>
-  </div>
 </body>
 </html>
